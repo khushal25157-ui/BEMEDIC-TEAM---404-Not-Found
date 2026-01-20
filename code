@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BEMEDIC | Project Brief Deck</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f6f1e9; /* paper-beige */
+      color: #111;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    /* Top Accent Line */
+    .top-line {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: #8b5cf6; /* subtle violet accent */
+    }
+
+    /* Header */
+    header {
+      padding: 32px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .brand {
+      font-weight: 800;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+    }
+
+    .brand small {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: #333;
+      margin-top: 4px;
+    }
+
+    /* Main Content */
+    main {
+      display: flex;
+      justify-content: flex-end;
+      padding: 80px 80px 0 80px;
+    }
+
+    .title-block {
+      text-align: right;
+      max-width: 600px;
+    }
+
+    .title {
+      font-size: 4.2rem;
+      font-weight: 900;
+      line-height: 1.05;
+    }
+
+    .subtitle {
+      margin-top: 18px;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    /* Footer */
+    footer {
+      position: absolute;
+      bottom: 40px;
+      left: 0;
+      width: 100%;
+      padding: 0 80px;
+      display: flex;
+      gap: 80px;
+      font-size: 0.75rem;
+      color: #333;
+    }
+
+    footer span {
+      display: block;
+      font-weight: 800;
+      margin-bottom: 6px;
+      color: #111;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      main {
+        justify-content: center;
+        padding: 60px 30px;
+      }
+      .title-block {
+        text-align: center;
+      }
+      .title {
+        font-size: 3rem;
+      }
+      footer {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-line"></div>
+
+  <header>
+    <!-- Brand -->
+    <div class="brand">
+      BEMEDIC
+      <small>One Platform. Complete Care</small>
+    </div>
+
+    <!-- Menu Icon -->
+    <div style="font-size:26px;cursor:pointer;user-select:none;" onclick="toggleMenu()">☰</div>
+  </header>
+
+  <main>
+    <div class="title-block">
+      <div class="title">PROJECT<br>BRIEF DECK</div>
+      <div class="subtitle">One Platform. Complete Care</div>
+    </div>
+  </main>
+
+  <!-- Services Section -->
+  <section id="services" style="padding:100px 80px 80px 80px;background:#f6f1e9;">
+    <h2 style="font-size:2.6rem;font-weight:900;margin-bottom:20px;">BEMEDIC Services</h2>
+    <p style="max-width:650px;margin-bottom:60px;color:#333;">
+      BEMEDIC integrates essential healthcare solutions into one unified digital platform, designed to improve accessibility, safety, and early decision-making for users across all age groups.
+    </p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:48px;">
+
+      <div>
+        <h3 style="font-weight:800;margin-bottom:10px;">AI Symptom Analysis</h3>
+        <p style="color:#333;">Uses intelligent algorithms to analyze symptoms and suggest possible conditions, helping users decide the right next step in care.</p>
+      </div>
+
+      <div>
+        <h3 style="font-weight:800;margin-bottom:10px;">Medication Guidance</h3>
+        <p style="color:#333;">Provides dosage information, interaction alerts, and safe-use guidance to reduce medication-related risks.</p>
+      </div>
+
+      <div>
+        <h3 style="font-weight:800;margin-bottom:10px;">Mental Health Support</h3>
+        <p style="color:#333;">Offers private self-assessments, AI-based emotional support, and wellness guidance to promote mental well-being.</p>
+      </div>
+
+      <div>
+        <h3 style="font-weight:800;margin-bottom:10px;">Doctor Discovery & Booking</h3>
+        <p style="color:#333;">Enables users to find nearby healthcare professionals and book appointments seamlessly through the platform.</p>
+      </div>
+
+      <div>
+        <h3 style="font-weight:800;margin-bottom:10px;">Digital Health Records</h3>
+        <p style="color:#333;">Securely stores medical reports, prescriptions, and history for quick access anytime, anywhere.</p>
+      </div>
+
+      <div>
+        <h3 style="font-weight:800;margin-bottom:10px;">Preventive & Lifestyle Care</h3>
+        <p style="color:#333;">Delivers personalized health insights, reminders, and lifestyle suggestions to prevent future health issues.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer Information (Kept as Requested) -->
+  <footer>
+    <div>
+      <span>NAME OF PROJECT</span>
+      BEMEDIC
+    </div>
+    <div>
+      <span>PRESENTED BY</span>
+      404 Not Found
+    </div>
+    <div>
+      <span>PRESENTED TO</span>
+      Hack-4-Viksit Bharat
+    </div>
+  </footer>
+
+  
