@@ -73,11 +73,8 @@
 
     /* Footer */
     footer {
-      position: absolute;
-      bottom: 40px;
-      left: 0;
-      width: 100%;
-      padding: 0 80px;
+      margin-top: 96px; /* reduced to 80% */ /* proper gap from contact section */
+      padding: 60px 80px 40px 80px;
       display: flex;
       gap: 80px;
       font-size: 0.75rem;
@@ -175,20 +172,114 @@
     </div>
   </section>
 
-  <!-- Footer Information (Kept as Requested) -->
-  <footer>
-    <div>
-      <span>NAME OF PROJECT</span>
-      BEMEDIC
+  <!-- Objectives & Goals Section -->
+  <section id="objectives" style="padding:120px 80px 80px 80px;background:#f6f1e9;">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:60px;">
+      <div style="max-width:520px;">
+        <h2 style="font-size:3.2rem;font-weight:900;line-height:1.1;margin-bottom:16px;">Objectives and<br>Goals</h2>
+        <p style="color:#333;max-width:420px;">Clarify the project's main overall objectives and goals.</p>
+      </div>
+
+      
     </div>
-    <div>
-      <span>PRESENTED BY</span>
-      404 Not Found
+
+    <div style="margin-top:100px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:80px;text-align:center;">
+
+      <div>
+        <div style="font-size:22px;margin-bottom:16px;">★ ★ ★</div>
+        <h3 style="font-weight:900;margin-bottom:10px;">Goal #1</h3>
+        <p style="color:#333;max-width:260px;margin:0 auto;">Democratize smart healthcare access through AI-driven guidance.</p>
+      </div>
+
+      <div>
+        <div style="font-size:22px;margin-bottom:16px;">★ ★ ★</div>
+        <h3 style="font-weight:900;margin-bottom:10px;">Goal #2</h3>
+        <p style="color:#333;max-width:260px;margin:0 auto;">Ensure safer, smarter treatment with medication intelligence.</p>
+      </div>
+
+      <div>
+        <div style="font-size:22px;margin-bottom:16px;">★ ★ ★</div>
+        <h3 style="font-weight:900;margin-bottom:10px;">Goal #3</h3>
+        <p style="color:#333;max-width:260px;margin:0 auto;">Optimize healthcare delivery by reducing delays and inefficiencies.</p>
+      </div>
+
     </div>
-    <div>
-      <span>PRESENTED TO</span>
-      Hack-4-Viksit Bharat
+  </section>
+
+  <!-- Our Team Section -->
+  <section id="team" style="padding:120px 80px 80px 80px;background:#f6f1e9;text-align:center;">
+    <h2 style="font-size:3rem;font-weight:900;margin-bottom:10px;">Our team</h2>
+    <p style="font-size:1.1rem;margin-bottom:80px;color:#333;">404 Not Found</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:80px;align-items:start;">
+
+      <div>
+        <h3 style="font-size:1.2rem;letter-spacing:1px;margin-bottom:6px;">KHUSHAL</h3>
+        <p style="font-size:0.85rem;letter-spacing:1px;margin-bottom:20px;">CAPTAIN</p>
+        <div style="font-size:20px;">✦</div>
+      </div>
+
+      <div>
+        <h3 style="font-size:1.2rem;letter-spacing:1px;margin-bottom:6px;">RAJAT</h3>
+        <p style="font-size:0.85rem;letter-spacing:1px;margin-bottom:20px;">MEMBER 1</p>
+        <div style="font-size:20px;">✦</div>
+      </div>
+
+      <div>
+        <h3 style="font-size:1.2rem;letter-spacing:1px;margin-bottom:6px;">DEVENDRA</h3>
+        <p style="font-size:0.85rem;letter-spacing:1px;margin-bottom:20px;">MEMBER 2</p>
+        <div style="font-size:20px;">✦</div>
+      </div>
+
+      <div>
+        <h3 style="font-size:1.2rem;letter-spacing:1px;margin-bottom:6px;">D.K MITTAL</h3>
+        <p style="font-size:0.85rem;letter-spacing:1px;margin-bottom:20px;">MEMBER 3</p>
+        <div style="font-size:20px;">✦</div>
+      </div>
+
     </div>
-  </footer>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" style="padding:100px 80px 80px 80px;background:#f6f1e9;">
+    <h2 style="font-size:2.6rem;font-weight:900;margin-bottom:20px;">Contact Us</h2>
+    <p style="max-width:650px;margin-bottom:40px;color:#333;">
+      Have questions, feedback, or collaboration ideas for BEMEDIC? Reach out to us using the form below.
+    </p>
+
+    <form style="max-width:500px;">
+      <label style="display:block;font-weight:800;margin-bottom:8px;">Email</label>
+      <input type="email" placeholder="your@email.com" required
+        style="width:100%;padding:12px;margin-bottom:24px;border:1px solid #ccc;border-radius:6px;font-size:0.95rem;" />
+
+      <label style="display:block;font-weight:800;margin-bottom:8px;">Message</label>
+      <textarea rows="5" placeholder="Write your message here..." required
+        style="width:100%;padding:12px;border:1px solid #ccc;border-radius:6px;font-size:0.95rem;"></textarea>
+
+      <button type="submit"
+        style="margin-top:24px;padding:12px 28px;background:#111;color:#fff;border:none;border-radius:6px;font-weight:800;cursor:pointer;">
+        Send Message
+      </button>
+    </form>
+  </section>
 
   
+
+  <!-- Thank You Section -->
+  <section id="thankyou" style="padding:140px 80px 120px 80px;background:#f6f1e9;">
+    <div style="font-size:4rem;font-weight:900;margin-bottom:120px;">Thank you</div>
+
+    <div style="display:flex;justify-content:space-between;align-items:center;border-top:1px solid #333;border-bottom:1px solid #333;padding:16px 0;font-size:0.85rem;">
+      <div>ⓘ Website under work.</div>
+      <div style="font-weight:800;">One Platform. Complete Care</div>
+    </div>
+        <div style="margin-top:60px;display:flex;gap:80px;font-size:0.9rem;flex-wrap:wrap;">
+      <div><strong>NAME OF PROJECT:</strong><br>BEMEDIC</div>
+      <div><strong>PRESENTED BY:</strong><br>404 Not Found</div>
+      <div><strong>PRESENTED TO:</strong><br>Hack-4-Viksit Bharat</div>
+    </div>
+  </section>
+
+</body>
+</html>
+
